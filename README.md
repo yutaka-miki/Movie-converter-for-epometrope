@@ -10,6 +10,9 @@ If you don't know about epometrope, read about it <a rel="license" href="https:/
 - <a rel="license" href="https://processing.org/download/" target="_blank"> Processing </a>
 
 ## Usage
+https://github.com/yutaka-miki/Epometorope#%E3%82%B3%E3%83%B3%E3%83%86%E3%83%B3%E3%83%84%E9%96%8B%E7%99%BA
+
+
 ffmpeg -i Sample.avi -f image2 -vf fps=112.000896 Sample_jpg/%01d.jpg  
 （Movie_converter_for_epometrope.pde を使う。）  
 ffmpeg -r 7 -i Sample_jpg_alignment/%01d.jpg -r 15 Sample_alignment.mov  
