@@ -3,11 +3,11 @@
 These are tools to convert rotating sequential images into "Dedicated 2D video".  
 
 ## Epometrope
-エポメトロープを知らない人は こちら を読んでみてください。  
-If you don't know about epometrope, read about it here.  
+エポメトロープを知らない人はまず<a rel="license" href="https://github.com/yutaka-miki/Epometorope" target="_blank"> こちら </a>を読んでみてください。  
+If you don't know about epometrope, read about it <a rel="license" href="https://github.com/yutaka-miki/Epometorope" target="_blank"> here </a>.   
 
 ## Require
-- Processing
+- <a rel="license" href="https://processing.org/download/" target="_blank"> Processing </a>
 
 ## Usage
 ffmpeg -i Sample.avi -f image2 -vf fps=112.000896 Sample_jpg/%01d.jpg  
