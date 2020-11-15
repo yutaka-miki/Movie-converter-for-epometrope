@@ -1,4 +1,6 @@
 # Movie-converter-for-epometrope
+These are tools to convert rotating sequential images into "Dedicated 2D video".
+
 【for PC】  
 ffmpeg -i Sample.avi -f image2 -vf fps=112.000896 Sample_jpg/%01d.jpg  
 （Movie_converter_for_epometrope.pde を使う。）  
