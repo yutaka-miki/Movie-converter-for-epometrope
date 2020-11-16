@@ -44,4 +44,4 @@ https://github.com/yutaka-miki/ofxEpometrope
 ## Reference
 サンプルファイルで使わせてもらった作品を紹介します。
 - <a rel="license" href="https://3d.nicovideo.jp/works/td30681" target="_blank">『Tda式初音ミクV4X』Tda様</a>
-- <a rel="license" href="https://www.nicovideo.jp/watch/sm27098405" target="_blank">「glow」昭和臭漂うモーション』盗賊@つばきP様</a>
+- <a rel="license" href="https://www.nicovideo.jp/watch/sm27098405" target="_blank">『「glow」昭和臭漂うモーション』盗賊@つばきP様</a>
