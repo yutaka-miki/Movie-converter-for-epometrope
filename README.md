@@ -39,7 +39,6 @@ sh convert.sh (NAME) (FRAME_LATE)
 #example
 sh convert.sh sample 10
 ~~~
-  
 <img src="images/2D-image_4.gif" width="500">  
   
 (7)「専用2D映像」をエポメトロープ上で再生する。  
