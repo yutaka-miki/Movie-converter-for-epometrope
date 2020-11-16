@@ -1,6 +1,8 @@
 # Movie-converter-for-epometrope
 連番画像を「専用2D映像」に変換するためのツール郡です。  
 These are tools to convert rotating sequential images into "Dedicated 2D video".  
+- Movie_converter_for_epometrope.pde (Processing)
+- convert.sh
 
 ## Epometrope
 エポメトロープを知らない人はまず<a rel="license" href="https://github.com/yutaka-miki/Epometorope" target="_blank"> こちら </a>を読んでみてください。  
@@ -27,7 +29,7 @@ ffmpeg -i (MOVIE_FILE) -f image2 -vf fps=(FRAME_LATE) (NAME)/%01d.jpg
 ffmpeg -i Sample.avi -f image2 -vf fps=112.000896 Sample/%01d.jpg
 ~~~
 
-(5) 連番画像を「Movie_converter_for_epometrope.pde」を使ってタイル状に並べた画像に変換します。
+(5) 連番画像を「Movie_converter_for_epometrope.pde」を使ってタイル状に並べた画像（変換画像）に変換します。
 
 (6) 変換画像を「専用2D映像（動画）」に変換する。#exampleでは「Sample_alignment_rotate_800.mov」というファイルが生成されます。
 ~~~
