@@ -46,3 +46,7 @@ ffmpeg -i Sample.avi -f image2 -vf fps=112.000896 Sample_jpg/%01d.jpg
 ffmpeg -r 7 -i Sample_jpg_alignment/%01d.jpg -r 15 Sample_alignment.mov  
 ffmpeg -i Sample_alignment.mov -vf "transpose=2" Sample_alignment_rotate.mov  
 ffmpeg -i Sample_alignment_rotate.mov -vf scale=800:-1 Sample_alignment_rotate_800.mov
+
+## Reference
+- <a rel="license" href="https://3d.nicovideo.jp/works/td30681" target="_blank">『Tda式初音ミクV4X』Tda様</a>
+- <a rel="license" href="https://www.nicovideo.jp/watch/sm27098405" target="_blank">「glow」昭和臭漂うモーション』盗賊@つばきP様</a>
