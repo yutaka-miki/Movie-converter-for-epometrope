@@ -19,6 +19,7 @@ If you don't know about epometrope, read about it <a rel="license" href="https:/
 ~~~
 cd /Users/(USER_NAME)/Desktop/Movie_converter_for_epometrope
 ~~~
+
 (4) 動画を連番画像に変換します。**連番画像を用意した場合は(4)はスキップしてください。**
 ~~~
 ffmpeg -i Sample.avi -f image2 -vf fps=(FRAME_LATE) Sample_jpg/%01d.jpg
@@ -26,11 +27,18 @@ ffmpeg -i Sample.avi -f image2 -vf fps=(FRAME_LATE) Sample_jpg/%01d.jpg
 ffmpeg -i Sample.avi -f image2 -vf fps=(FRAME_LATE) Sample_jpg/%01d.jpg
 ~~~
 
-#### (2)ターミナルで「sh 1.sh」を入力し、
+(5) 連番画像を「Movie_converter_for_epometrope.pde」を使ってタイル状に並べた画像に変換します。
 
-#### (3)
+(6) 変換画像を「専用2D映像（動画）」に変換する。
+~~~
+ffmpeg -i Sample.avi -f image2 -vf fps=(FRAME_LATE) Sample_jpg/%01d.jpg
+#example
+ffmpeg -i Sample.avi -f image2 -vf fps=(FRAME_LATE) Sample_jpg/%01d.jpg
+~~~
 
-#### (4)
+(7)「専用2D映像」をエポメトロープ上で再生する。
+ofxEpometrope  
+https://github.com/yutaka-miki/ofxEpometrope  
 
 ffmpeg -i Sample.avi -f image2 -vf fps=112.000896 Sample_jpg/%01d.jpg  
 （Movie_converter_for_epometrope.pde を使う。）  
