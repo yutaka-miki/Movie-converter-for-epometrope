@@ -36,7 +36,7 @@ ffmpeg -i Sample.avi -f image2 -vf fps=(FRAME_LATE) Sample_jpg/%01d.jpg
 ffmpeg -i Sample.avi -f image2 -vf fps=(FRAME_LATE) Sample_jpg/%01d.jpg
 ~~~
 
-(7)「専用2D映像」をエポメトロープ上で再生する。
+(7)「専用2D映像」をエポメトロープ上で再生する。  
 ofxEpometrope  
 https://github.com/yutaka-miki/ofxEpometrope  
 
