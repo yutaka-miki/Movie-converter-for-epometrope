@@ -11,9 +11,16 @@ If you don't know about epometrope, read about it <a rel="license" href="https:/
 - <a rel="license" href="https://processing.org/download/" target="_blank">Processing</a>
 
 ## Usage
-<a rel="license" href="https://github.com/yutaka-miki/Epometorope#%E3%82%B3%E3%83%B3%E3%83%86%E3%83%B3%E3%83%84%E9%96%8B%E7%99%BA" target="_blank">Epometrope-コンテンツ開発</a>
 
+(1) <a rel="license" href="https://github.com/yutaka-miki/Epometorope#%E3%82%B3%E3%83%B3%E3%83%86%E3%83%B3%E3%83%84%E9%96%8B%E7%99%BA" target="_blank">Epometrope-コンテンツ開発</a>にしたがい、動画もしくは連番画像を用意する。
 
+(2) 動画を連番画像に変換します。**連番画像を用意した場合は(2)はスキップしてください。**
+
+#### (2)ターミナルで「sh 1.sh」を入力し、
+
+#### (3)
+
+#### (4)
 
 ffmpeg -i Sample.avi -f image2 -vf fps=112.000896 Sample_jpg/%01d.jpg  
 （Movie_converter_for_epometrope.pde を使う。）  
