@@ -1,7 +1,7 @@
 String imp;
 PImage img;
 
-int count = 1;
+int count = 7;
 int c1 = 0;
 int c2 = 0;
 int c3 = 0;
@@ -15,7 +15,8 @@ int H = 4;
 //int WH = W*H;
 int WH = 16;
 
-String file ="Sample_jpg";
+String file ="example";
+//String file ="example";
 
 void settings() {
   size(W*w, H*h);
