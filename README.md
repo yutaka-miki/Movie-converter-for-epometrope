@@ -22,9 +22,9 @@ cd /Users/(USER_NAME)/Desktop/Movie_converter_for_epometrope
 
 (4) 動画を連番画像に変換します。(連番画像を用意した場合は(4)はスキップしてください。)
 ~~~
-ffmpeg -i Sample.avi -f image2 -vf fps=(FRAME_LATE) Sample_jpg/%01d.jpg
+ffmpeg -i (MOVIE_FILE) -f image2 -vf fps=(FRAME_LATE) (CONSECUTIVE_FILE_DIR)/%01d.jpg
 #example
-ffmpeg -i Sample.avi -f image2 -vf fps=(FRAME_LATE) Sample_jpg/%01d.jpg
+ffmpeg -i Sample.avi -f image2 -vf fps=112.000896 Sample_jpg/%01d.jpg
 ~~~
 
 (5) 連番画像を「Movie_converter_for_epometrope.pde」を使ってタイル状に並べた画像に変換します。
