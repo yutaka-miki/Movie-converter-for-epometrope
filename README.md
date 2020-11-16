@@ -22,30 +22,24 @@ cd /Users/(USER_NAME)/Desktop/Movie_converter_for_epometrope
 
 (4) 動画を連番画像に変換します。(連番画像を用意した場合は(4)はスキップしてください。)
 ~~~
-ffmpeg -i (MOVIE_FILE) -f image2 -vf fps=(FRAME_LATE) (CONSECUTIVE_FILE_DIR)/%01d.jpg
+ffmpeg -i (MOVIE_FILE) -f image2 -vf fps=(FRAME_LATE) (NAME)/%01d.jpg
 #example
-ffmpeg -i Sample.avi -f image2 -vf fps=112.000896 Sample_jpg/%01d.jpg
+ffmpeg -i Sample.avi -f image2 -vf fps=112.000896 Sample/%01d.jpg
 ~~~
 
 (5) 連番画像を「Movie_converter_for_epometrope.pde」を使ってタイル状に並べた画像に変換します。
 
-(6) 変換画像を「専用2D映像（動画）」に変換する。
+(6) 変換画像を「専用2D映像（動画）」に変換する。#exampleでは「Sample_alignment_rotate_800.mov」というファイルが生成されます。
 ~~~
-ffmpeg -i Sample.avi -f image2 -vf fps=(FRAME_LATE) Sample_jpg/%01d.jpg
+sh convert.sh (NAME) (FRAME_LATE)
 #example
-ffmpeg -i Sample.avi -f image2 -vf fps=(FRAME_LATE) Sample_jpg/%01d.jpg
+sh convert.sh sample 10
 ~~~
 
 (7)「専用2D映像」をエポメトロープ上で再生する。  
   
 ofxEpometrope  
 https://github.com/yutaka-miki/ofxEpometrope  
-
-ffmpeg -i Sample.avi -f image2 -vf fps=112.000896 Sample_jpg/%01d.jpg  
-（Movie_converter_for_epometrope.pde を使う。）  
-ffmpeg -r 7 -i Sample_jpg_alignment/%01d.jpg -r 15 Sample_alignment.mov  
-ffmpeg -i Sample_alignment.mov -vf "transpose=2" Sample_alignment_rotate.mov  
-ffmpeg -i Sample_alignment_rotate.mov -vf scale=800:-1 Sample_alignment_rotate_800.mov
 
 ## Reference
 - <a rel="license" href="https://3d.nicovideo.jp/works/td30681" target="_blank">『Tda式初音ミクV4X』Tda様</a>
