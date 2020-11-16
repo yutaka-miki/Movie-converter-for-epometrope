@@ -20,7 +20,7 @@ If you don't know about epometrope, read about it <a rel="license" href="https:/
 cd /Users/(USER_NAME)/Desktop/Movie_converter_for_epometrope
 ~~~
 
-(4) 動画を連番画像に変換します。**連番画像を用意した場合は(4)はスキップしてください。**
+(4) 動画を連番画像に変換します。(連番画像を用意した場合は(4)はスキップしてください。)
 ~~~
 ffmpeg -i Sample.avi -f image2 -vf fps=(FRAME_LATE) Sample_jpg/%01d.jpg
 #example
