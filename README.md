@@ -30,6 +30,8 @@ ffmpeg -i Sample.avi -f image2 -vf fps=112.000896 Sample/%01d.jpg
 ~~~
 
 (5) 連番画像を「Movie_converter_for_epometrope.pde」を使ってタイル状に並べた画像（変換画像）に変換します。
+  
+<img src="images/1.jpg" width="300">
 
 (6) 変換画像を「専用2D映像（動画）」に変換する。#exampleでは「Sample_alignment_rotate_800.mov」というファイルが生成されます。
 ~~~
@@ -37,7 +39,8 @@ sh convert.sh (NAME) (FRAME_LATE)
 #example
 sh convert.sh sample 10
 ~~~
-
+<img src="images/2D-image_4.gif.jpg" width="500">  
+  
 (7)「専用2D映像」をエポメトロープ上で再生する。  
   
 ofxEpometrope  
